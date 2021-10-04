@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FOODWARE</title>
+
+    <!-- Styling !-->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- End !-->
+
+    <!-- Google API !-->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+     <!-- End !-->
+
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>SIGN IN</h2>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry.
+      </p>
+      <div class="login-google">
+       <div id="g_id_onload"
+     data-client_id="277367124723-o6q3ph4k0ao9u5v157pepnpt3km23fhj.apps.googleusercontent.com"
+     data-login_uri="https://www.youtube.com/"
+     data-auto_prompt="false">
+</div>
+<div class="g_id_signin"
+     data-type="standard"
+     data-size="large"
+     data-theme="outline"
+     data-text="sign_in_with"
+     data-shape="rectangular"
+     data-logo_alignment="left">
+</div>
+      </div>
+      <hr class="hr1">
+      <form action="login.php" method="POST">
+        <input class="id" name="identity" type="hidden" value ="in"/>
+      <div class="email-container">
+        <input name="email" type="" placeholder="Email"/>
+        <i data-feather="user"></i>
+    </div>
+      <div class="password-container">
+        <input name="psw" type="" placeholder="Password" />
+        <i data-feather="lock"></i>
+      </div>
+      <div class="options-container">
+        <div class="checkbox-container">
+          <input type="checkbox" name="remember" id="remember" />
+          <label for="remember">Remember Me </label>
+        </div>
+        <a href="google.com">Reset Password</a>
+        <input type="submit" value="SIGN IN" />
+      </div>
+      </form>    
+    </div>
+    <div class="rectangle-container">
+        <img src="assets/rectangle.png" alt="">
+    </div>
+    <div class="img-container">
+       <img src="assets/bg-foodware.png" alt="Imagem de fundo foodware">
+    </div>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
