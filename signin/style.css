@@ -56,6 +56,7 @@ svg{
     margin: 20px;
 }
 
+
 .hr1{
     border: 0;
     border-top: 1px solid var(--grey);
@@ -79,6 +80,10 @@ svg{
     padding: 0px 0.3em;
     background-color: white;
     
+}
+
+.id {
+    display: none;
 }
 
 .email-container input{
@@ -109,6 +114,22 @@ svg{
 .password-container input::placeholder{
     color: var(--grey-font);
 }
+
+.password-confirm input{
+    height: 45px;
+    width: 300px;
+    left: 144px;
+    top: 288px;
+    border: 1px solid var(--grey-button);
+    background: var(--grey-button);
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 0 55px 0 25px;
+}
+.password-confirm input::placeholder{
+    color: var(--grey-font);
+}
+
 .options-container{
     padding: 0 20px;
     margin-top: 1px;
